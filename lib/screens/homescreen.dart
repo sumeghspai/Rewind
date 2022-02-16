@@ -1,4 +1,3 @@
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:rewind/utils/color_utils.dart';
@@ -29,7 +28,11 @@ class _HomeScreenState extends State<HomeScreen> {
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.fromLTRB(
-                20, MediaQuery.of(context).size.height * 0.2, 20, 0,),
+              20,
+              MediaQuery.of(context).size.height * 0.2,
+              20,
+              0,
+            ),
             child: Column(
               children: <Widget>[
                 ElevatedButton(
@@ -48,14 +51,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 30,
                 ),
                 ElevatedButton(
-                  child: Text("Sell"),
+                  child: Text("Waste Collection"),
                   onPressed: () {},
                 ),
                 SizedBox(
                   height: 30,
                 ),
                 ElevatedButton(
-                  child: Text("Buy"),
+                  child: Text("Buy Items"),
                   onPressed: () {},
                 ),
                 SizedBox(
